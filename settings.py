@@ -13,7 +13,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
 	'OPTIONS': {
-		'read_default_file': '/home/aisha/flourish/my.cnf',
+		'read_default_file': '/var/www/flourishcms/my.cnf',
 	},
 #        'NAME': '',                      # Or path to database file if using sqlite3.
 #       'USER': '',                      # Not used with sqlite3.
@@ -78,7 +78,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
 )
 
-ROOT_URLCONF = 'flourish.urls'
+ROOT_URLCONF = 'flourishcms.urls'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
